@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Login_Fail_Pass</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fae654ef-781d-490f-a2f4-c754a8dac596</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Login_Fail_NullUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ff36eac6-7bc2-4bc8-932e-f0b9438fca34</testCaseGuid>
+</TestCaseEntity>
