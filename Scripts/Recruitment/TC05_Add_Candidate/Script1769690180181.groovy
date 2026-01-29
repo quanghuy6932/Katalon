@@ -17,13 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Auth/TC01_Login_Success'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+WebUI.click(findTestObject('Page_AddCandidate/Page_OrangeHRM/link_Recruitment'))
 
-WebUI.setText(findTestObject('Page_Login/txt_Username'), 'Admin')
+WebUI.click(findTestObject('Page_AddCandidate/Page_OrangeHRM/btn_Add'))
 
-WebUI.setEncryptedText(findTestObject('Page_Login/txt_Password'), 'hUKwJTbofgPU9eVlw/CnDQ==')
+WebUI.setText(findTestObject('Page_AddCandidate/Page_OrangeHRM/txt_FirstName'), 'Huy')
 
-WebUI.click(findTestObject('Page_Login/btn_Login'))
+WebUI.setText(findTestObject('Page_AddCandidate/Page_OrangeHRM/txt_MiddleName'), 'Test')
+
+WebUI.setText(findTestObject('Page_AddCandidate/Page_OrangeHRM/txt_LastName'), 'Katalon')
+
+WebUI.setText(findTestObject('Page_AddCandidate/Page_OrangeHRM/txt_Email'), 'test.user@example.com')
+
+WebUI.click(findTestObject('Page_AddCandidate/Page_OrangeHRM/button_Save'))
+
+WebUI.verifyElementPresent(findTestObject('Page_AddCandidate/Page_OrangeHRM/msg_Success'), 5)
+
+WebUI.closeBrowser()
 
